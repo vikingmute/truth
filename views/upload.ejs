@@ -1,0 +1,25 @@
+<%- include header %>
+		<div class="twelve columns content">
+		<div class="dform" style="padding-left:20px">
+			<h3>Post new book</h3>
+			<% if (info !== undefined && info != "") { %>
+				<div class="infoBubble"> 
+				    <%= info %>
+				</div>
+				<% } %>
+			<form action="/upload" method="post">
+			<p class="clearfix"><label for="regularInput">DoubanID:</label>
+			<input type="text" id="did" name="did"/>
+			<input type="button" value="GetInfo" id="getdid"/></p>
+			<p class="clearfix"><label for="regularInput">Tags:</label>
+			<input type="text" id="tags" name="tags"/></p>
+			<p class="clearfix"><label for="regularInput">Upload:</label>
+			<input type="file" id="afile" name="afile"/></p>
+			<p class="clearfix"><input type="submit" value="Post" id="post" style="margin:20px 0 20px 15px;"/></p>
+			</form>			
+			</div>
+		</div>	
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		<script src="js/select2.js"></script>
+		<script src="js/post.js"></script>
+<%- include footer %>

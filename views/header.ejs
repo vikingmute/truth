@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Your Page Title Here :)</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/select2.css">
+	<link href='http://fonts.googleapis.com/css?family=Norican' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!--modernizr.js-->
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+	<div class="container">
+		<div class="three columns sidebar">
+				<h3><a href="#home">Yiju.us</a></h3>
+				<p class="bold">阅读 分享 提高</p>
+
+				<h6>TAGS</h6>
+				<ul id="alltaglist">
+
+				</ul>
+		</div>
+		<div class="twelve columns subheader">
+			<p><span class="quote"><em>"I tried to be perfect But nothing was worth it"</em> By Sum41</span>
+				<% if (useremail) { %>
+				<span class="lgform">Welcome: <%= useremail %> <a href="/upload">Upload</a> | <a href="/logout">Logout</a></span> 
+				<% } else { %>
+				<span class="lgform"><a href="/login">Login</a> | <a href="/signup">Signup</a></span>				
+				<% } %>
+			</p>
+		</div>

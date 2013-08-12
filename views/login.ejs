@@ -1,0 +1,20 @@
+<%- include header %>
+		<div class="twelve columns content">
+		<div class="dform" style="padding-left:20px">
+			<h3>Login to nodebook</h3>
+			<% if (info !== undefined && info != "") { %>
+				<div class="infoBubble"> 
+				    <%= info %>
+				</div>
+				<% } %>
+			<form action="/login" method="post">
+			<p class="clearfix"><label for="regularInput">Email:</label>
+			<input type="text" id="email" name="email"/></p>
+			<p class="clearfix"><label for="regularInput">Password:</label>
+			<input type="password" id="pwd" name="pwd"/></p>
+			<p class="clearfix"><input type="submit" value="Login" id="login" style="margin:20px 0 20px 15px;"/></p>
+			</form>			
+			</div>
+		</div>	
+
+<%- include footer %>	
